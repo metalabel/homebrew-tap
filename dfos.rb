@@ -5,21 +5,21 @@
 class Dfos < Formula
   desc "CLI for the DFOS protocol — create identities, publish content, run relays"
   homepage "https://protocol.dfos.com"
-  version "0.39.0"
+  version "0.40.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/metalabel/dfos/releases/download/v0.39.0/dfos_0.39.0_darwin_amd64.tar.gz"
-      sha256 "948608c18254732d04cdfdd9dc0a813d394e730d611a82e952f6f654d34e9a0e"
+      url "https://github.com/metalabel/dfos/releases/download/v0.40.0/dfos_0.40.0_darwin_amd64.tar.gz"
+      sha256 "5cb86590b992398a0ad4d8fc30ae66a3a37c152dee5565c864cc499d3680b92e"
 
       define_method(:install) do
         bin.install "dfos"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/metalabel/dfos/releases/download/v0.39.0/dfos_0.39.0_darwin_arm64.tar.gz"
-      sha256 "d6ddc24992e4d3e74edab94faf1e682c35702b085652ab0817cf281b8184ceb6"
+      url "https://github.com/metalabel/dfos/releases/download/v0.40.0/dfos_0.40.0_darwin_arm64.tar.gz"
+      sha256 "bf31d2a981e8006a4e711d953e72416a8c11b068c6126e904664808c9ca5d61a"
 
       define_method(:install) do
         bin.install "dfos"
@@ -29,15 +29,15 @@ class Dfos < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/metalabel/dfos/releases/download/v0.39.0/dfos_0.39.0_linux_amd64.tar.gz"
-      sha256 "a445c39e0884c857222ffefe4644a23dcf18ccac75c07d6147d1029d73ac7b3e"
+      url "https://github.com/metalabel/dfos/releases/download/v0.40.0/dfos_0.40.0_linux_amd64.tar.gz"
+      sha256 "c8d0ef4129e2db1fceccb687ec78c794a4bd796527dcf675ee66bcdbbe8b7e09"
       define_method(:install) do
         bin.install "dfos"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/metalabel/dfos/releases/download/v0.39.0/dfos_0.39.0_linux_arm64.tar.gz"
-      sha256 "80ef8ed5c877a65a1490a652e878d9793b55949029ef8be587f4a1c0633abb8f"
+      url "https://github.com/metalabel/dfos/releases/download/v0.40.0/dfos_0.40.0_linux_arm64.tar.gz"
+      sha256 "3232c3c82f701fb662defffd6d54e20b47d3526eb7ad217168e4f958aab630e6"
       define_method(:install) do
         bin.install "dfos"
       end
